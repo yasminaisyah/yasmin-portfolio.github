@@ -1,0 +1,167 @@
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Yasmin Aisyah- Portfolio</title>
+     <style>
+        body {
+            background-color: lightcyan; 
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        .about-text p {
+            font-size: 1.0em;
+        }
+        .about-image img {
+            width: 400%; 
+            height: auto;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+        <!-- ... (previous HTML code) ... -->
+
+<!-- Home Section with Light Blue Background -->
+<section id="home" style="background-color: lightblue; color: #fff; text-align: center; padding: 100px 0;">
+    
+
+    <h1 style="font-size: 3em;">Hello, I'm Yasmin Aisyah</h1>
+    <p style="font-size: 1.2em; margin-top: 20px;">Web Developer | Creative Thinker | Problem Solver</p>
+    
+
+    <!-- Call-to-Action Button -->
+    <a href="#projects" style="display: inline-block; margin-top: 30px; padding: 15px 30px; background-color: #4CAF50; color: #fff; text-decoration: none; border-radius: 5px; font-size: 1.2em;">See My Work</a>
+</section>
+   
+    
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+           <div class="about-container">
+        <div class="about-image">
+            <img src="pp.png" alt="" width="800" height="533">
+        </div>
+        <div class="about-text">
+            <p>Background: <br> Name: Yasmin Aisyah binti Khairudin <br> Age: 21  <br> Live: Kelantan <br> Born: Kuala Lumpur <br><br>
+                Education: <br> Primary: Sekolah Kebangsaan Batu Gajah <br> Secondary: Maktab Rendah Sains Mara Jeli <br> Tertiary: Universiti Sultan Zainal Abidin</p>
+        </div>
+    </div>
+</section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <!-- Project 1 -->
+        <div class="project-card" onmouseover="addAnimation(this)" onmouseout="removeAnimation(this)">
+            <img src="pro1.png" alt="Project 1 Screenshot">
+            <h3>Portfolio Website</h3>
+            <p>Description: My personal portfolio website showcasing my skills and projects. The website is designed using HTML, CSS, and JavaScript for interactivity. It includes sections such as an introduction, about me, projects, and a contact form.</p>
+            <p>Technologies used: HTML, CSS, JavaScript</p>
+            <a href="#" target="_blank">My Portfolio</a>
+            
+            
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card" onmouseover="addAnimation(this)" onmouseout="removeAnimation(this)">
+            <img src="pro2.png" alt="Project 2 Screenshot">
+            <h3>Course Registration System</h3>
+            <p>Description: Designed to facilitate the registration process for academic courses within an educational institution. This system serves as a centralized platform where students can view available courses, register for classes, and manage their academic schedules.</p>
+            <p>Technologies used: HTML, CSS, JavaScript</p>
+            <a href="http://localhost:8080/sistemPendaftaranKursus/index.html" target="_blank">Course Registration System</a>
+        </div>
+
+         <div class="project-card" onmouseover="addAnimation(this)" onmouseout="removeAnimation(this)">
+            <img src="pro3.png" alt="Project 3 Screenshot">
+            <h3>Emporium East Coast</h3>
+            <p>Online store that offers first-class products and exceptional customer service to shoppers. We are an innovative and forward-thinking business, with the drive and ability to constantly update and improve the online shopping experience.</p>
+            <p>Technologies used: Wix.com</p>
+            <a href="#" target="_blank">https://nurulnazurah2001.wixsite.com/emporium-east-coast</a>
+        </div>
+    </section>
+
+    <!-- Contact Me Section -->
+ <!-- ... (previous HTML code) ... -->
+
+    <!-- Contact Me Section -->
+  <section class="contact" id="contact">
+      <h2>Get In Touch With Me <br><br></h2>
+      <form id="contact-form" onsubmit="validateForm(event)">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Enter Your Name"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Enter Your Email"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                cols="60"
+                rows="10"
+                placeholder="Enter Your Message"
+                name="message"
+                class="input-field"
+                required
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Submit"
+              id="submit-btn"
+              class="submit-btn"
+            />
+          </form>
+      
+     <p class="links">Or find me on:</p>
+       
+     <a href="https://twitter.com/ysminaisyh1" target="blank"><i class="fab fa-twitter"> Twitter</i></a>
+        <a href="https://www.instagram.com/ysminaisyh/" target="blank"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=100050528561863" target="blank"><i class="fab fa-facebook"></i> Facebook</a>
+        <a href="https://github.com/yasminaisyah" target="blank"><i class="fab fa-GitHub"></i> GitHub</a>
+        <a href="https://www.linkedin.com/in/yasmin-aisyah-30390518b/" target="blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    </section>
+    
+   
+</body>
+
+</html>
+
+    
+
+
